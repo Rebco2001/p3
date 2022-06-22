@@ -1,0 +1,146 @@
+font-family: 'Shrikhand', cursive;
+font-family: 'Roboto', sans-serif;
+
+body{
+    font-family: 'Roboto';
+    overflow-x: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+header{
+	display: flex;
+    width: 95%;
+    text-align: center;
+    column-gap: 15%;
+    padding: 0px 0px 0px 5%;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Roboto';
+}
+
+header i{
+	font-size: 30px;
+}
+
+header img{
+	width: 50%;
+}
+
+.image img{
+	position: relative;
+	width: 100%;
+	object-fit: cover;
+	height: 250px;
+	z-index: 0;
+}
+
+.page{
+	position: relative;
+	z-index: 1;
+	width: 90%;
+	justify-content: center;
+	font-family: 'Roboto';
+	background-color: #F2F2F2;
+	border-radius: 30px 30px 0px 0px;
+	padding: 0% 5% 30px 5%;
+	margin-top: -20%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow : ellipsis;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.titre{
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titre i{
+	font-size: 25px;
+}
+
+.menu h2{
+	border-bottom: 3px solid #99E2D0;
+	width: 13%;
+}
+
+.button{
+	display: flex;
+	flex-direction: column;
+	column-gap: 20px;
+	border-radius: 20px;
+	width: 90%;
+	margin-bottom: 15px;
+	background-color: white;
+	line-height: 0px;
+	padding: 0% 5% 0% 5%;
+}
+
+.button div{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+.bouton_1{
+	display: flex;
+    justify-content: center;
+    height: 50px;
+    border-radius: 30px;
+    margin: 15%;
+    background-image: linear-gradient(#E26FDA, #AB5EDB);
+    color: white;
+}
+
+
+
+footer{
+	width: 90%;
+	text-align: left;
+	justify-content: center;
+	background-color: #353535;
+	color: white;
+	align-items: center;
+	line-height: 25px;
+	padding: 0% 5% 5% 5%;
+	font-family: 'Roboto'
+}
+
+.footer{
+	width: 98%;
+	padding: 1%;
+	align-items: center;
+}
+
+.logo{
+	font-family: 'Shrikhand';
+}
+
+footer img{
+	width: 50%;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+li{
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+}
+
+li p{
+	margin: 0px;
+}
