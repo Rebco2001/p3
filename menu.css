@@ -41,12 +41,16 @@ header img{
 	position: relative;
 	z-index: 1;
 	width: 90%;
-	justify-content: center;
 	font-family: 'Roboto';
 	background-color: #F2F2F2;
 	border-radius: 30px 30px 0px 0px;
 	padding: 0% 5% 30px 5%;
 	margin-top: -20%;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	overflow: hidden;
 }
 
 a{
@@ -68,6 +72,9 @@ a{
 	overflow: hidden;
 	text-overflow : ellipsis;
 }
+.menu{
+	width: 100%;
+}
 
 .menu h2{
 	border-bottom: 3px solid #99E2D0;
@@ -75,27 +82,77 @@ a{
 }
 
 .button{
-	display: flex;
-	flex-direction: column;
-	column-gap: 20px;
-	border-radius: 20px;
-	width: 90%;
-	margin-bottom: 15px;
-	background-color: white;
-	line-height: 0px;
-	padding: 0% 5% 0% 5%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow : ellipsis;
+  	display: flex;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 0% 0% 0% 5%;
+    transform: scale(1.0);
+    width: 95%;
+    height: 60px;
 }
 
-.button div{
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	white-space: nowrap;
+.button:hover .button_in{
+	width: 50%;
+}
+
+.button:hover .anim{
+	transform: translate(-68px);
+	transition: all 400ms;
+}
+
+.anim{
+	height: 60px;
+    width: 60px;
+    background-color: #99E2D0;
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+  	border-radius: 0px 20px 20px 0px;
+}
+
+.anim i{
+	color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+    font-size: 32px;
+}
+
+.button_in{
 	overflow: hidden;
-	text-overflow : ellipsis;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	width: 80%;
+}
+
+.button_in h3{
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	margin: 7px 0px;
+
+}
+
+.button_in p{
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	margin: 0px;
+}
+
+.prix{
+	display: flex;
+  	flex-direction: row;
+  	align-items: flex-end;
+  	justify-content: flex-end;
+    font-weight: bold;
+    width: 20%;
+}
+
+.prix p{
+	margin: 5px;
 }
 
 
@@ -107,6 +164,7 @@ a{
     margin: 15%;
     background-image: linear-gradient(#E26FDA, #AB5EDB);
     color: white;
+    padding: 0px 20px;
 }
 
 
