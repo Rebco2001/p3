@@ -90,15 +90,14 @@ a{
     transform: scale(1.0);
     width: 95%;
     height: 60px;
+    overflow: hidden;
 }
 
-.button:hover .button_in{
-	width: 50%;
-}
 
-.button:hover .anim{
-	transform: translate(-68px);
+.button:hover .prix{
+	transform: translate(-60px);
 	transition: all 400ms;
+	margin-left: 35px;
 }
 
 .anim{
@@ -149,6 +148,8 @@ a{
   	justify-content: flex-end;
     font-weight: bold;
     width: 20%;
+    position: relative;
+    right: -60px;
 }
 
 .prix p{
