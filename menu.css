@@ -72,6 +72,31 @@ a{
 	overflow: hidden;
 	text-overflow : ellipsis;
 }
+
+.coeur-vide{
+	position: relative;
+	z-index: 2;
+	right: 0px;
+}
+
+.coeur-plein{
+	position: relative;
+	z-index: 1;
+	right: 0px;
+	display: none;
+}
+
+.coeur:hover .coeur-vide{
+	display: none;
+}
+
+.coeur:hover .coeur-plein{
+	display: block;
+	background: linear-gradient(#ED80E6, #c67ef2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .menu{
 	width: 100%;
 }
