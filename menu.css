@@ -196,6 +196,13 @@ a{
     background-image: linear-gradient(#E26FDA, #AB5EDB);
     color: white;
     padding: 0px 20px;
+    transform: scale(1);
+}
+
+.bouton_1:hover{
+    transition: all 500ms;
+	background-image: linear-gradient(#ED80E6, #c67ef2);
+	box-shadow: 3px 3px 10px grey;
 }
 
 
