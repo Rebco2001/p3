@@ -68,9 +68,6 @@ a{
 
 .titre i{
 	font-size: 25px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow : ellipsis;
 }
 
 .coeur-vide{
@@ -125,6 +122,14 @@ a{
 	margin-left: 35px;
 }
 
+.button:hover .anim i{
+	transform: rotate(360deg);
+	transition: all 400ms;
+}
+
+
+
+
 .anim{
 	height: 60px;
     width: 60px;
@@ -178,7 +183,7 @@ a{
 }
 
 .prix p{
-	margin: 5px;
+	margin: 0px 15px 5px 0px;
 }
 
 
