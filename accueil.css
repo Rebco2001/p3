@@ -20,8 +20,54 @@ header img{
 	width: 50%;
 }
 
+.spinner{
+	position: relative;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation-name: spinner;
+    animation-duration: 3s;
+    top: -2212px;
+}
+
+.loader{
+	font-size: 100px;
+	display: inline-block;
+	animation-name: loader;
+    animation-duration: 3s;
+    opacity: 0;
+    padding: 50% 0%;
+}
+
+@keyframes spinner{
+	0% {
+		opacity: 1;
+		background-color: white;
+	}
+	100%{
+		opacity: 1;
+		background-color: white;
+	}
+}
+
+@keyframes loader{
+    0% {
+    	opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(540deg);
+        opacity: 1;
+    }
+}
+
 .page{
-	font-family: 'Roboto'
+	position: relative;
+	z-index: 50;
+	font-family: 'Roboto';
 }
 
 a{
@@ -126,6 +172,8 @@ a{
 	line-height: 10px;
 	box-shadow: 7px 5px 20px -10px grey;
 	z-index: 1;
+	animation-name: apparition;
+	animation-duration: 10s;
 }
 
 .restaurant img{
@@ -233,4 +281,13 @@ li{
 
 li p{
 	margin: 0px;
+}
+
+@keyframes apparition{
+    0% {
+        transform: translateX(50px) translateY(50px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
 }

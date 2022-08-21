@@ -4,21 +4,103 @@ body{
 	text-align: center;
 }
 
-.spinner{
-	height: 500px;
-	line-height: 500px;
-	background-color: yellowgreen;
+.restaurants{
+	background-color: #F6F6F6;
+	padding-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.loader{
-	width: 200px;
+.restaurants h1{
+	padding-left: 5%;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.restaurant{
+	width: 330px;
+	margin: 5%;	
+	height: 280px;
+	border-radius: 15px;
+	background-color: white;
+	line-height: 10px;
+	box-shadow: 7px 5px 20px -10px grey;
+	z-index: 1;
+	animation-name: apparition;
+	animation-duration: 5s;
+}
+
+.restaurant img{
+	object-fit: cover;
+	width: 330px;
 	height: 200px;
-	font-size: 50px;
-	display: inline-block;
-	transform: scale(1.0);
+	border-radius: 15px 15px 0px 0px;
 }
 
-.loader:hover i{
-	transform: rotate(360deg);
-	transition: all 2s;
+.img_new{
+	object-fit: cover;
+	width: 330px;
+	height: 200px;
+	border-radius: 15px 15px 0px 0px;
+	margin-top: -36px;
+}
+
+.new{
+	position: relative;
+    z-index: 2;
+    font-size: 11px;
+    color: #008766;
+    text-align: center;
+    background-color: #99E2D0;
+    padding: 2px 10px;
+    width: 15%;
+    left: 250px;
+    bottom: -10px;
+}
+
+.bouton_2_txt{
+	display: flex;
+	padding-left: 4%;
+	align-items: center;
+}
+
+.bouton_2_txt i{
+	font-size: 25px;
+}
+
+.bouton_2_txt div{
+	width: 250px;
+}
+
+.coeur-vide{
+	position: relative;
+	z-index: 2;
+	right: -20px;
+}
+
+.coeur-plein{
+	position: relative;
+	z-index: 1;
+	right: -20px;
+	display: none;
+}
+
+.coeur:hover .coeur-vide{
+	display: none;
+}
+
+.coeur:hover .coeur-plein{
+	display: block;
+	background: linear-gradient(#ED80E6, #c67ef2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes apparition{
+    0% {
+        transform: translateX(20px) translateY(20px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
 }

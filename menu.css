@@ -113,6 +113,8 @@ a{
     width: 95%;
     height: 60px;
     overflow: hidden;
+    animation-name: apparition;
+	animation-duration: 5s;
 }
 
 
@@ -126,9 +128,6 @@ a{
 	transform: rotate(-720deg);
 	transition: all 400ms
 }
-
-
-
 
 .anim{
 	height: 60px;
@@ -246,4 +245,13 @@ li{
 
 li p{
 	margin: 0px;
+}
+
+@keyframes apparition{
+    0% {
+        transform: translateX(50px) translateY(50px);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
 }
