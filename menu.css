@@ -113,49 +113,19 @@ a{
     width: 95%;
     height: 60px;
     overflow: hidden;
-}
 
-.button:nth-child(1){
-	animation-name: opacite;
-	animation-duration: 5s;
-}
-
-.button:nth-child(1){
-	animation-name: apparition;
-	animation-duration: 5s;
 }
 
 .button:nth-child(2){
-	animation-name: opacite;
-	animation-duration: 5s;
-}
-
-.button:nth-child(2){
-	animation-name: apparition;
-	animation-duration: 5s;
-	animation-delay: 1s;
+	animation: opacite 1s ease-in 0s, apparition 1s ease-in 0s;
 }
 
 .button:nth-child(3){
-	animation-name: opacite;
-	animation-duration: 5s;
+	animation: opacite 2s ease-in 0s, apparition 1s ease-in 1s;
 }
-
-.button:nth-child(3){
-	animation-name: apparition;
-	animation-duration: 5s;
-	animation-delay: 2s;
-}
-
+	
 .button:nth-child(4){
-	animation-name: opacite;
-	animation-duration: 5s;
-}
-
-.button:nth-child(4){
-	animation-name: apparition;
-	animation-duration: 5s;
-	animation-delay: 3s;
+	animation: opacite 4s ease-in 0s, apparition 1s ease-in 2s;
 }
 
 
@@ -292,6 +262,11 @@ li p{
     0% {
         opacity: 0;
     }
+
+    50%{
+    	opacity: 0;
+    }
+
     100%{
     	opacity: 1;
     }
@@ -304,6 +279,5 @@ li p{
 
     100% {
         transform: translateY(0px);
-        opacity: 1;
     }
 }
