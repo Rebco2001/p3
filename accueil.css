@@ -6,6 +6,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 header{
@@ -21,7 +22,7 @@ header img{
 }
 
 .test{
-	position: absolute;
+	position: relative;
 	z-index: 2;
 }
 
