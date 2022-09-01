@@ -1,0 +1,54 @@
+.page{
+
+}
+
+header h1{
+	text-align: left;
+	margin: 30px;
+}
+
+.loader{
+	padding: 30% 0%;
+}
+
+.localisation{
+	top: 0px;
+    right: 30px;
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    font-family: 'Raleway';
+    border: 1px solid #F2F2F2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.description{
+	padding: 3%;
+	background-color: white;
+}
+
+.bouton_1{
+	width: 30%;
+}
+
+.fonctionnement{
+	flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0% 0% 30px 30px;
+    column-gap: 5%;
+}
+
+.fonctionnement h1{
+	width: 100%;
+}
+
+.bouton_2{
+	width: 25%;
+	margin: 0px;
+}

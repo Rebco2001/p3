@@ -29,6 +29,12 @@ header img{
 	width: 50%;
 }
 
+header h1{
+	font-family: 'Shrikhand';
+	position: relative;
+	right: -20%;
+}
+
 .image img{
 	position: relative;
 	width: 100%;
@@ -280,4 +286,8 @@ li p{
     100% {
         transform: translateY(0px);
     }
+}
+
+footer i{
+	width: 20px;
 }
