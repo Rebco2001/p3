@@ -22,7 +22,7 @@ header img{
 }
 
 .test{
-	position: relative;
+	position: relativecd ;
 	z-index: 2;
 }
 
@@ -177,8 +177,6 @@ a{
 	line-height: 10px;
 	box-shadow: 7px 5px 20px -10px grey;
 	z-index: 1;
-	animation-name: apparition;
-	animation-duration: 10s;
 }
 
 .restaurant img{
@@ -286,13 +284,4 @@ li{
 
 li p{
 	margin: 0px;
-}
-
-@keyframes apparition{
-    0% {
-        transform: translateX(50px) translateY(50px);
-    }
-    100% {
-        transform: translateX(0px) translateY(0px);
-    }
 }
