@@ -5,8 +5,9 @@ body{
     font-family: 'Roboto';
     overflow-x: hidden;
     width: 100%;
-    margin: auto;
+    margin: 0px;
     overflow: hidden;
+    padding: 0px;
 }
 
 header{
@@ -28,7 +29,6 @@ header img{
 
 .spinner{
 	position: absolute;
-	z-index: 1;
 	width: 100vw;
 	height: 100vh;
 	align-items: center;
@@ -45,11 +45,12 @@ header img{
     animation-duration: 3s;
     opacity: 0;
     padding: 50% 0%;
+
 }
 
 @keyframes spinner{
 	0% {
-		display: none;
+		display: block;
 		background-color: white;
 		z-index: 3;
 	}
