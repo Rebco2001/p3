@@ -25,6 +25,7 @@ header img{
 .test{
 	position: relativecd ;
 	z-index: 2;
+	animation: opacite 3s;
 }
 
 .spinner{
@@ -36,6 +37,7 @@ header img{
     text-align: center;
     animation-name: spinner;
     animation-duration: 3s;
+    display: none;
 }
 
 .loader{
@@ -69,6 +71,20 @@ header img{
     100% {
         transform: rotate(540deg);
         opacity: 1;
+    }
+}
+
+@keyframes opacite{
+    0% {
+        opacity: 0;
+    }
+
+    99%{
+    	opacity: 0;
+    }
+
+    100%{
+    	opacity: 1;
     }
 }
 
