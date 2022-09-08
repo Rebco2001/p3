@@ -38,6 +38,7 @@ header img{
     animation-name: spinner;
     animation-duration: 3s;
     z-index: 1;
+    overflow: hidden;
 }
 
 .loader{
