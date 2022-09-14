@@ -80,6 +80,10 @@ a{
 	font-size: 25px;
 }
 
+.titre h1{
+	font-family: 'Shrikhand';
+}
+
 .coeur-vide{
 	position: relative;
 	z-index: 2;
