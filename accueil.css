@@ -115,7 +115,7 @@ a{
     flex-wrap: wrap;
 }
 
-.description h1{
+.description h2{
 	margin: 0px;
 }
 
@@ -185,7 +185,7 @@ a{
     row-gap: 30px;
 }
 
-.restaurants h1{
+.restaurants h2{
 	padding-left: 5%;
     padding-top: 20px;
     width: 100%;
