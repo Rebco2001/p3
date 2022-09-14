@@ -26,6 +26,20 @@ header h1{
     border-radius: 10px;
 }
 
+.restaurants{
+    row-gap: 0px;
+    justify-content: center;
+}
+
+.restaurant{
+    width: 330px;
+    margin: 5%; 
+}
+
+.restaurant img{
+    width: 330px;
+}
+
 .description{
 	padding: 3%;
 	background-color: white;
@@ -49,6 +63,6 @@ header h1{
 }
 
 .bouton_2{
-	width: 25%;
-	margin: 0px;
+	min-width: min-content;
+    margin: 0px;
 }
