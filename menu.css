@@ -11,7 +11,7 @@ body{
 
 header{
 	display: flex;
-    width: 95%;
+    width: 90%;
     column-gap: 15%;
     padding: 0px 0px 0px 5%;
     align-items: center;

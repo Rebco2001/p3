@@ -42,11 +42,14 @@ header img{
 }
 
 .loader{
+	height: 100vh;
 	font-size: 100px;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	animation-name: loader;
     animation-duration: 3s;
-    padding: 50% 0%;
     opacity: 0;
 
 }
