@@ -20,6 +20,10 @@ header{
     margin-bottom: 5%;
     font-family: 'Roboto';
 }
+.header_a{
+	position: relative;
+	z-index: 1;
+}
 
 header i{
 	font-size: 30px;
@@ -32,7 +36,7 @@ header img{
 header h1{
 	font-family: 'Shrikhand';
 	position: relative;
-	right: -20%;
+	z-index: 2;
 }
 
 .image img{
