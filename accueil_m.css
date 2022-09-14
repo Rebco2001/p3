@@ -15,7 +15,7 @@ header h1{
 	top: 0px;
     right: 30px;
     position: absolute;
-    width: 400px;
+    width: 40%;
     height: 50px;
     display: flex;
     font-family: 'Raleway';
@@ -33,7 +33,7 @@ header h1{
 
 .restaurant{
     width: 330px;
-    margin: 5%; 
+    margin: 5%;
 }
 
 .restaurant img{
@@ -43,6 +43,18 @@ header h1{
 .description{
 	padding: 3%;
 	background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.description h1{
+    width: 100%;
+}
+
+.description p{
+    width: 100%;
 }
 
 .bouton_1{

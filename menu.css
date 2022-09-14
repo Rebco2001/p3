@@ -12,7 +12,6 @@ body{
 header{
 	display: flex;
     width: 95%;
-    text-align: center;
     column-gap: 15%;
     padding: 0px 0px 0px 5%;
     align-items: center;
@@ -20,13 +19,16 @@ header{
     margin-bottom: 5%;
     font-family: 'Roboto';
 }
-.header_a{
-	position: relative;
-	z-index: 1;
+
+header a{
+	font-size: 30px;
 }
 
 header i{
 	font-size: 30px;
+	position: relative;
+	z-index: 1;
+	width: 100%;
 }
 
 header img{
@@ -37,6 +39,9 @@ header h1{
 	font-family: 'Shrikhand';
 	position: relative;
 	z-index: 2;
+	width: 100%;
+	text-align: center;
+	width: 50%;
 }
 
 .image img{
