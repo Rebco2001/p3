@@ -1,0 +1,316 @@
+font-family: 'Shrikhand', cursive;
+font-family: 'Roboto', sans-serif;
+
+body{
+    font-family: 'Roboto';
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+header{
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+header img{
+	width: 50%;
+}
+
+.test{
+	position: relative ;
+	animation: opacite 3s;
+	z-index: 2;
+}
+
+.spinner{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation-name: spinner;
+    animation-duration: 3s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.loader{
+	height: 100vh;
+	font-size: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	animation-name: loader;
+    animation-duration: 3s;
+    opacity: 0;
+
+}
+
+@keyframes spinner{
+	0%{
+		display: block;
+		z-index: 3;
+	}
+	100%{
+		display: block;
+		z-index: 3;
+	}
+}
+
+@keyframes loader{
+    0% {
+    	opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(540deg);
+        opacity: 1;
+    }
+}
+
+@keyframes opacite{
+    0% {
+        opacity: 0;
+    }
+
+    99%{
+    	opacity: 0;
+    }
+
+    100%{
+    	opacity: 1;
+    }
+}
+
+.page{
+	font-family: 'Roboto';
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.localisation{
+	justify-content: center;
+	display: flex;
+	background-color: #EAEAEA;
+	align-items: center;
+	column-gap: 10px;
+	box-shadow: 0px 2px 4px 0px #d5d5d5 inset;
+}
+
+.description{
+	text-align: center;
+	background-color: #F6F6F6;
+	padding: 13%;
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.description h2{
+	margin: 0px;
+}
+
+.bouton_1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	width: 70%;
+	margin: 0% 15%;
+	background-image: linear-gradient(#E26FDA, #AB5EDB);
+	color: white;
+	box-shadow: 3px 3px 10px #C1C1C3;
+	transform: scale(1);
+}
+
+.bouton_1:hover{
+    transition: all 500ms;
+	background-image: linear-gradient(#ED80E6, #c67ef2);
+	box-shadow: 3px 3px 10px grey;
+}
+
+.fonctionnement{
+    margin: 5%;
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bouton_2{
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
+	height: 60px;
+	border-radius: 20px;
+	margin: 3%;
+	background-color: #F2F2F2;
+	box-shadow: 7px 5px 20px -10px grey;
+}
+
+.bouton_2:hover{
+	background-color: #F5EDFF;
+}
+
+.bouton_2:hover i{
+	color: #9356DC;
+}
+
+.chiffre{
+	background-color: #9356DC;
+    border-radius: 30px;
+    padding-top: 3px;
+    color: white;
+    height: 22px;
+    width: 25px;
+    text-align: center;
+    margin: -2%;
+}
+
+.restaurants{
+	background-color: #F6F6F6;
+	padding-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
+.restaurants h2{
+    width: 100%;
+}
+
+.restaurant{
+	width: 80%;
+	height: 280px;
+	border-radius: 15px;
+	background-color: white;
+	line-height: 10px;
+	box-shadow: 7px 5px 20px -10px grey;
+	z-index: 1;
+}
+
+.restaurant img{
+	object-fit: cover;
+	width: 100%;
+	height: 200px;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.img_new{
+	object-fit: cover;
+	width: 330px;
+	height: 200px;
+	border-radius: 15px 15px 0px 0px;
+	margin-top: -36px;
+}
+
+.new{
+	position: relative;
+    z-index: 2;
+    font-size: 11px;
+    color: #008766;
+    text-align: center;
+    background-color: #99E2D0;
+    padding: 2px 10px;
+    width: min-content;
+    left: 65%;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+.bouton_2_txt{
+	display: flex;
+	flex-direction: row;
+	padding-left: 4%;
+	align-items: center;
+}
+
+.bouton_2_txt i{
+	font-size: 25px;
+}
+
+.bouton_2_txt div{
+	width: 250px;
+}
+
+.coeur-vide{
+	position: relative;
+	z-index: 2;
+	right: -15%;
+}
+
+.coeur-plein{
+	position: relative;
+	z-index: 1;
+	right: -15%;
+	display: none;
+}
+
+.coeur:hover .coeur-vide{
+	display: none;
+}
+
+.coeur:hover .coeur-plein{
+	display: block;
+	background: linear-gradient(#ED80E6, #c67ef2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+footer{
+	width: 90%;
+	text-align: left;
+	justify-content: center;
+	background-color: #353535;
+	color: white;
+	align-items: center;
+	line-height: 25px;
+	padding: 0% 5% 5% 5%;
+	font-family: 'Roboto';
+}
+
+.footer{
+	width: 98%;
+	padding: 1%;
+	align-items: center;
+}
+
+.logo{
+	font-family: 'Shrikhand';
+}
+
+footer img{
+	width: 50%;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+li{
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+}
+
+li p{
+	margin: 0px;
+}
+
+footer i{
+	width: 20px;
+}

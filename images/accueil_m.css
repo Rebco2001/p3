@@ -1,0 +1,76 @@
+.page{
+
+}
+
+header h1{
+	text-align: left;
+	margin: 30px;
+}
+
+.localisation{
+	top: 0px;
+    right: 30px;
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    font-family: 'Raleway';
+    border: 1px solid #F2F2F2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.restaurants{
+    row-gap: 0px;
+    justify-content: center;
+}
+
+.restaurant{
+    width: 330px;
+    margin: 5%;
+}
+
+.restaurant img{
+    width: 330px;
+}
+
+.description{
+	padding: 3%;
+	background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.description h2{
+    width: 100%;
+}
+
+.description p{
+    width: 100%;
+}
+
+.bouton_1{
+	width: 30%;
+}
+
+.fonctionnement{
+	flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0% 0% 30px 30px;
+    column-gap: 5%;
+}
+
+.fonctionnement h2{
+	width: 100%;
+}
+
+.bouton_2{
+	min-width: min-content;
+    margin: 0px;
+}
